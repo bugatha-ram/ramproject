@@ -1,0 +1,10 @@
+<p>FirstName: <%= f.text_field :name %></p>
+<p>LastName: <%= f.text_field :lastname %></p>
+<p>Age : <%= f.text_field :age %></p>
+<p>Gender : <%= f.radio_button :gender ,'male' %> Male
+            <%= f.radio_button :gender ,'female' %> Female </p>
+<p>Email: <%= f.email_field :email %></p>
+<p>Phoneno : <%= f.number_field :phoneno %></p>
+<p>Address : <%= f.text_area :address %></p>
+<p>Subject : <%=  f.select :"subject",
+"<option>Data modeling</option><option>AWS</option><option>Ruby on Rails</option><option>Java</option>".html_safe , :include_blank=> true %></p>

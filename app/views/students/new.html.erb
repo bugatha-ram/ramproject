@@ -1,0 +1,18 @@
+<%= form_for @student, url: {:action => "create"} do |f| %>
+<h1><%= "Welcome to Madhuram site!!!!!!!!!!".html_safe %></h1>
+<p><%= ".............................................".html_safe %></p>
+<p><%= "please fill the details.".html_safe %></p>
+<p>FirstName: <%= f.text_field :name %></p>
+<p>LastName: <%= f.text_field :lastname %></p>
+<p>Age : <%= f.text_field :age %></p>
+<p>Gender : <%= f.radio_button :gender ,'male' %> Male
+            <%= f.radio_button :gender ,'female' %> Female </p>
+<p>Email: <%= f.email_field :email %></p>
+<p>Phoneno : <%= f.number_field :phoneno %></p>
+<p>Address : <%= f.text_area :address %></p>
+<p>Subject : <%=  f.select :"subject",
+"<option>Data modeling</option><option>AWS</option><option>Ruby on Rails</option><option>Java</option>".html_safe , :include_blank=> true %></p>
+
+<p><%= f.submit :"submit" %></p>   
+
+<% end %>

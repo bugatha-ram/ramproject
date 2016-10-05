@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @university.firstname %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @university.lastname %>
+</p>
+
+<p>
+  <strong>Fullname:</strong>
+  <%= @university.fullname %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @university.age %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @university.gender %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @university.phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @university.email %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @university.address %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @university.subject %>
+</p>
+
+<%= link_to 'Edit', edit_university_path(@university) %> |
+<%= link_to 'Records', universities_path %>

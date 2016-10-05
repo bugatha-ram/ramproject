@@ -1,0 +1,18 @@
+<h1>Students record:</h1>
+
+<table>
+<tr>
+   <th>Name</th>
+   <th>Actions</th>
+</tr>
+<% @student.each do |s| %>
+<tr>
+<td><%= s.name %></td>
+
+<td><%= link_to "Show", profile_path(s) %>
+<%= link_to "edit", edit_path(s) %>
+<%= link_to "Delete",delete_path(s), method: "delete", data: {confirm: "are you sure you want to delete?"} %></td>
+<% end %>
+
+</tr>
+</table> 
